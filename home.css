@@ -1,0 +1,866 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header-title-line{
+    display:none
+}
+
+header{
+    width: 100vw;
+    position: fixed;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    
+}
+
+body{
+    background-image: linear-gradient(#ffff00,#ffa500);
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+/* header section*/
+.container-head{
+    background-image: url(./ponnaikaran.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60%;
+    border-radius: 0px 0px 80px 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+
+}
+/* header section*/
+
+/* logo background section*/
+
+.imgh{
+    height: 200px;
+    width:200px;
+    position: absolute;
+    top:40%;
+    left:43%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+    border-radius: 3rem;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction:alternate;
+  z-index: 1;
+}
+/* logo background secion*/
+
+header nav{
+    display: flex;
+    justify-content:space-between;
+    margin: 15px;
+    
+}
+
+
+header li a{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+color: #fff;
+letter-spacing: 1.2px;
+font-size: 0.8rem;
+font-weight: 0.9rem;
+text-decoration: none;
+border: 1px solid #fff;
+border-radius: 1rem;
+padding: 5px 15px;
+
+}
+header ul li{
+    display: inline;
+    list-style: none;
+    margin-right: 70px; 
+     
+}
+
+header ul li a:hover{
+    background-image: linear-gradient(#def10fba,#37010164);
+    border: 1px solid rgb(245, 59, 13);
+    cursor:pointer;
+
+}
+
+
+header nav img{ 
+    border-radius: 3rem;
+    position: absolute;
+    top:2%;
+   width: 40px;
+   height: 40px;
+    
+}
+
+.banner h1{
+    margin-bottom: 50px;
+    text-decoration:overline;
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: 3rem;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.banner p{
+    font-family: 'kanit', sans-serif;
+    margin-left: 30px;
+    color:rgb(242, 246, 245);
+    max-width: 600px;
+    font-size: 1.4rem;
+    font-weight: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.banner{
+    padding: 5%;
+    margin-top: 8%;
+    margin-left: 5%;
+    background-image: url("./menu\ background.jpg");
+    filter: brightness(0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+    border-radius: 3rem;
+    border: 1px solid f#ffff004b;
+    border-style: outset;
+    z-index: 2;
+
+
+}
+
+.card-section{
+    margin-top: 3%;
+    border: solid 2px#ffa500;
+    border-radius: 1rem;
+    border-style: outset;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 50vh;
+    background-color: rgba(247, 238, 238, 0.23);
+}
+
+.card-container H2{
+    color: red;
+    transition: 0.5s ease-in-out;
+
+}
+
+.card-container{
+    border: 0.1rem solid #ffa500;
+    border-radius:1.3rem 1.3rem 0 0;
+    font-family: sans-serif;
+    text-align: center;
+    width: 210px;
+    height: 350px;
+    background-color:#ffff00;
+    box-shadow: 10px 5px 26px rgba(20, 19, 19, 0.984);
+    overflow-x: hidden;
+}
+
+.image-container{
+    width:100%;
+    height: 310px;
+    overflow: hidden;
+
+
+
+}
+.image-container img{
+    border-radius:1.3rem 1.3rem 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.image-container img:hover{
+    transform: scale(1.1) rotate(5deg);
+    border-radius:1.3rem 1.3rem 0 0;
+    
+}
+
+.card-container H2:hover{
+    color: rgb(45, 33, 3);
+    transform: scale(1.1);
+
+}
+
+.banner h1:hover{
+    transform: scale(1.1);
+    color: #ffff00;
+}
+
+.banner p:hover{
+    transform: scale(1.1);
+    color: #ffa500;
+}
+
+@keyframes example {
+    0%{top:50px;}
+    20% { transform:scaleY(100%); }
+    65% { transform:scaleY(-100%); }
+    100% { top:0px; }
+  }
+.section-two{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-menu-container{
+border: #ffa500 2px solid;
+border-radius: 2rem;
+outline-offset: 2px;
+box-shadow: 4px 5px 2px;
+height: 90vh;
+width:98%;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.back-video{
+    filter: brightness(0.5);
+    object-fit:cover;
+    width: 98%;
+    height: 90vh;
+    border-radius: 2rem;
+    position: absolute;
+    z-index: -1;
+    
+}
+.about{
+    background-color: rgba(99, 97, 97, 0.23);
+    margin-top: 3%;
+    text-align: center;
+    height: fit-content;
+}
+.about h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 1rem;
+    color: #fff;
+
+}
+
+.about p{
+    padding: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 10px;
+    color: #fff;
+    line-height: 1.7rem;
+
+}
+
+.contact-container{
+    margin-top: 6%;
+    margin-left: 3%;
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.left form fieldset legend{
+    padding: 17px;
+    color: rgb(248, 247, 244);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.left form fieldset{
+    height: 400px;
+    color: whitesmoke;
+    font-family: sans-serif;
+    border-radius: 1.5rem;
+}
+.left{
+    margin-top: -4%;
+}
+
+
+.left h1{
+    margin-bottom: 5%;
+    padding-left:7%;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(23, 22, 22);
+}
+.left form{
+    border-radius: 1.5rem;
+    margin-bottom: 4%;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(40, 38, 143);
+    text-align: center;
+}
+.left form label{
+    font-family: sans-serif;
+    color: whitesmoke;
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 7%;
+} 
+.left form input{
+    width: 350px;
+    height: 35px;
+    border-radius: 1rem;
+}
+
+.left form textarea{
+    width: 350px;
+    border-radius: 1rem;
+
+}
+
+form button {
+    background-color: #f9f9f9;
+    color: #1b0642;
+    height: 2.3rem;
+    width:3.4rem;
+    border-radius:0.7rem;
+
+}
+
+
+
+
+
+.banner a{
+    text-decoration: none;
+}
+
+
+/* Footer-section */
+
+footer{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+   text-align: center;  
+}
+
+footer span{
+    color: #f62b11;
+    letter-spacing: 6px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "sofia",sans-serif;
+    text-shadow: 10px 5px 26px rgba(20, 19, 19, 0.984);
+
+}
+.footer-section{
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content:space-around;
+    padding: 2%;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 40px;
+    font-family: sans-serif;
+    font-weight: 2px;
+    display: block;
+}
+
+
+
+.footer-nav nav ul li a{
+    font-weight: 2rem;
+    font-size: 1.5;
+    line-height: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+    display: block;
+    
+    
+}
+
+.location{
+    color: whitesmoke;
+}
+
+.location a{
+    color: #080c3a;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+    
+    
+    /* For iPhone 6 and 6 plus Portrait or Landscape View */
+    @media (max-device-height: 916px) and (max-device-width: 412px)
+     {
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }    
+    body{
+    
+        height: 400px;
+        background-image: linear-gradient(#12ea57,#1223e3);
+        color: black;
+
+    
+    }
+
+    nav a img{
+        display: none; 
+    }
+
+    .imgh{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top:20%;
+        left:43%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+        border-radius: 3rem;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: 2;
+      animation-direction:alternate;
+    
+      
+    }
+
+    .container-head{
+        background-image: url(./ponnaikaran.jpg);
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 60%;
+        border-radius: 0px 0px 80px 80px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+    }
+
+    .banner{
+        margin-top: 5%;
+        margin-left: 1.9%;
+        background-image: url("./menu\ background.jpg");
+        filter: brightness(0.9);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh;
+        width: 95%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+        border-radius: 3rem;
+        border: 1px solid f#ffff004b;
+        border-style: outset;
+    
+    
+    
+    }
+     .banner h1{
+        text-decoration:overline;
+        font-family: sans-serif;
+        font-size: 8px;
+        font-weight: 5px;
+        color: white;
+        transition: 0.5s ease-in-out;
+     }
+
+     .banner p{
+        font-family: 'kanit', sans-serif;
+        margin-left: 8px;
+        color:rgb(242, 246, 245);
+        max-width: 600px;
+        font-size: 7px;
+        font-weight: 1px;
+        transition: 0.5s ease-in-out;
+     }
+    
+    .card-section{
+        margin-top: 15px;
+        border: solid 2px#ffa500;
+        border-radius: 1rem;
+        border-style: outset;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        height: 20vh;
+        background-color: rgba(247, 238, 238, 0.23);
+    }
+    
+    .card-container H2{
+        font-size:xx-small;
+        color: red;
+        transition: 0.5s ease-in-out;
+    
+    }
+    
+    .card-container{
+        border: 0.1rem solid #ffa500;
+        border-radius: 2px 2px 0 0;
+        font-family: sans-serif;
+        text-align: center;
+        width: 60px;
+        height: 90px;
+        background-color:#ffff00;
+        box-shadow: 10px 5px 26px rgba(20, 19, 19, 0.984);
+        overflow-x: hidden;
+    }
+
+    .image-container img{
+        border-radius: 2px 2px 0 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s ease-in-out;
+    }
+
+    
+    .image-container{
+        width:100%;
+        height: 70px;
+        overflow: hidden;
+    }
+
+
+    .section-two{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .more-menu-container{
+    margin-bottom: 27%;
+    border: #ffa500 2px solid;
+    border-radius: 2rem;
+    outline-offset: 2px;
+    box-shadow: 4px 5px 2px;
+    height: 60vh;
+    width:98%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .back-video{
+        filter: brightness(0.5);
+        object-fit:cover;
+        width: 98%;
+        height: 60vh;
+        border-radius: 2rem;
+        position: absolute;
+        
+        
+    }
+    .about{
+        background-color: rgba(99, 97, 97, 0.23);
+        text-align: center;
+        height: fit-content;
+    }
+    .about h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        font-weight: 3px;
+        color: #fff;
+    
+    }
+    
+    .about p{
+        height: 300px;
+        width: 300px;
+        padding: 2%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 9px;
+        font-weight: 7px;
+        color: #fff;
+        line-height: 1rem;
+    
+    }
+
+    .contact-container{
+        padding: 8%;
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    .contact-container form{
+        width: 50px;
+        height: 30px;
+        background-color: aquamarine;
+    
+    }
+    .banner a{
+        text-decoration: none;
+    }
+
+    
+footer{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;  
+}
+
+footer span{
+    color:  hsl(172, 94%, 49%);
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: "sofia",sans-serif;
+
+}
+footer p{
+    font-size: 11px;
+    
+}
+.footer-section .about-quote{
+    font-size: 10px;
+    max-width: 80px;
+}
+
+.footer-section{
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content:space-between;
+    padding: 2%;
+    
+}
+.social-media{
+    display: flex;
+}
+
+.social-media a{
+    font-size: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 1rem;
+    font-family: sans-serif;
+    font-weight: 2px;
+    display: block;
+}
+
+.footer-nav nav ul{
+    color: #02eaa4;
+}
+
+.footer-nav nav ul li a{
+    font-size: 10px;
+    line-height: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+    display: block;
+    
+    
+}
+
+.location{
+    margin-top: 3%;
+    color: whitesmoke;
+    font-size: 10px;
+}
+
+.location a{
+    color: #09f3c0;
+    font-weight: bold;
+}
+
+
+#frame{
+    width: 800px;
+    height:800px;
+    border: solid 2rem;
+    
+}
+
+
+
+
+    :root {
+        --HEADER-BGCOLOR: #333;
+        --HEADER-COLOR: whitesmoke;
+    }
+    
+
+    
+    header{
+        background-color: var(--HEADER-BGCOLOR);
+        color: var(--HEADER-COLOR);
+    }
+    
+    
+    .header-title-line {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .header-title-line a img{
+        width: 40px;
+        height: 40px;
+        border-radius: 1rem;
+    }
+    
+    .menu-button {
+        background-color: transparent;
+        border: none;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+    }
+    
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after {
+        background-color: var(--HEADER-COLOR);
+        width: 40px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        transition: all 0.5s;
+    }
+    
+    .menu-icon::before,
+    .menu-icon::after {
+        content: "";
+    }
+    
+    .menu-icon::before {
+        transform: translate(-20px, -12px);
+    }
+    
+    .menu-icon::after {
+        transform: translate(-20px, 12px);
+    }
+    
+    :is(header:hover, header:focus-within) .menu-icon {
+        background-color: transparent;
+        transform: rotate(720deg)
+    }
+    
+    :is(header:hover, header:focus-within) .menu-icon::before {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    
+    :is(header:hover, header:focus-within) .menu-icon::after {
+        transform: translateX(-20px) rotate(-45deg);
+    }
+    
+    :is(header:hover, header:focus-within) nav {
+        display: block;
+    }
+    
+    header nav {
+        background-color: var(--HEADER-BGCOLOR);
+        display: none;
+        transform-origin: top center;
+        animation: showMenu 0.5s ease-in-out forwards;
+        z-index: 2;
+    }
+    
+    @keyframes showMenu {
+        0% {
+            transform: scaleY(0);
+        }
+    
+        80% {
+            transform: scaleY(1.2);
+        }
+    
+        100% {
+            transform: scaleY(1);
+        }
+    }
+    
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-flow: column nowrap;
+        z-index: 1;
+    }
+    
+     header nav li {
+        padding: 0.5rem;
+        border-top: 1px solid var(--HEADER-COLOR);
+    }
+    
+    header nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    
+    header nav a:any-link {
+        color: var(--HEADER-COLOR);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    header nav a:hover,
+    header nav a:focus {
+        transform: scale(1.2);
+        transition: all 0.3s;
+    }
+    
+    h1{
+      color: red;
+    }
+
+    }
+    
+    .right address{
+        font-weight: 1rem;
+        font:1rem;
+        color: red;
+    }
+
